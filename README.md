@@ -1,52 +1,55 @@
-# Print Data Structures
+# Tic-Tac-Toe (Tres en Raya)
 
-Este proyecto en Java implementa y visualiza tres estructuras de datos diferentes: Patricia Trie, Ternary Search Tree y Red-Black Tree. Los usuarios pueden elegir una de estas estructuras para realizar búsquedas en un dataset de palabras en inglés y ver una representación gráfica de la búsqueda directamente en la consola.
+Este es un juego de Tres en Raya implementado en Java utilizando la biblioteca Swing para la interfaz gráfica. El jugador compite contra una inteligencia artificial (IA) que utiliza el algoritmo Minimax con poda alfa-beta para tomar decisiones óptimas.
 
-## Estructuras de Datos Implementadas
+## Características
 
-- **Patricia Trie**: Una versión compacta del Trie que almacena las palabras de manera más eficiente.
-- **Ternary Search Tree**: Un árbol donde cada nodo puede tener tres hijos y es útil para almacenar cadenas de manera eficiente.
-- **Red-Black Tree**: Un tipo de árbol binario de búsqueda balanceado que se auto-balancea.
+- **Modo de Juego**: El jugador humano juega contra la máquina.
+- **Algoritmo Minimax con Poda Alfa-Beta**: La IA toma decisiones basadas en un análisis profundo del tablero, optimizando su estrategia para ganar o empatar.
+- **Interfaz Gráfica**: Implementada con Swing, proporcionando una experiencia visual y de juego interactiva.
 
-## Dataset
+## Requisitos
 
-El dataset utilizado es un conjunto de palabras en inglés, disponible en el archivo \`resources/words_alpha.txt\`.
+- **Java 8** o superior debe estar instalado en tu máquina.
 
-## Cómo Ejecutar el Proyecto
+## Instalación y Ejecución
 
-### Requisitos Previos
+1. **Clonar el repositorio (si es necesario):**
 
-- Java Development Kit (JDK) 8 o superior.
-- [Git](https://git-scm.com/).
+    ```bash
+    git clone https://github.com/tu-usuario/tu-repositorio.git
+    cd tu-repositorio
+    ```
 
-### Compilación y Ejecución
+2. **Guardar el Código:**
 
-1. Clona el repositorio:
+   Asegúrate de que el código de `TicTacToe.java` esté guardado en el directorio principal del proyecto.
 
-   \`\`\`bash
-   git clone https://github.com/CarlosGabrielMoralesUmasi/PrintDataEstructures.git
-   cd PrintDataEstructures
-   \`\`\`
+3. **Compilar los archivos Java:**
 
-2. Compila el proyecto:
+    ```bash
+    javac TicTacToe.java
+    ```
 
-   \`\`\`bash
-   javac -d out src/datastructures/*.java src/model/*.java src/main/*.java
-   \`\`\`
+4. **Ejecutar el programa:**
 
-3. Ejecuta la aplicación:
+    ```bash
+    java TicTacToe
+    ```
 
-   \`\`\`bash
-   java -cp out main.SearchApplication
-   \`\`\`
+## Uso
 
-4. Sigue las instrucciones en la consola para seleccionar la estructura de datos y realizar la búsqueda.
+- **Interfaz de Usuario**: Se abrirá una ventana de juego. El jugador comienza haciendo clic en cualquier celda vacía del tablero para colocar su "X".
+- **IA**: La máquina responde automáticamente colocando una "O" en el tablero utilizando el mejor movimiento disponible basado en Minimax con poda alfa-beta.
+- **Final del Juego**: El juego termina cuando un jugador gana, pierde o se produce un empate. Al final de cada partida, el tablero se reinicia automáticamente.
 
-## Representación Gráfica
+## Estructura del Código
 
-Durante la búsqueda, se muestra una representación gráfica en la consola de cómo cada estructura de datos maneja la búsqueda.
+- **TicTacToe.java**: 
+  - Contiene la lógica completa del juego y la interfaz gráfica.
+  - Implementa el algoritmo Minimax con poda alfa-beta para la toma de decisiones de la máquina.
+  - Maneja eventos de clic en el tablero y actualiza el estado del juego en consecuencia.
 
-## Autor
+## Ejemplo de Ejecución
 
-**Carlos Gabriel Morales Umasi**  
-[GitHub](https://github.com/CarlosGabrielMoralesUmasi)
+Una vez que ejecutes el programa, verás una ventana de juego con una cuadrícula 3x3. El jugador comienza la partida, y la máquina responde automáticamente después de cada movimiento.
